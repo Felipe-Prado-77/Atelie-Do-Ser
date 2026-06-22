@@ -185,3 +185,26 @@ prev.addEventListener('click', () => {
 
 ///////
 
+// ===========================
+//  INTRO ANIMATION — intro.js
+// ===========================
+
+function dismissIntro() {
+  const intro = document.getElementById("intro");
+  const site  = document.getElementById("site");
+
+  intro.classList.add("exit");
+  site.classList.add("visible");  // remova esta linha se não usar a classe .visible no seu site
+
+  intro.addEventListener("animationend", () => intro.remove(), { once: true });
+}
+
+// Dispensa automaticamente após ~3.6s (quando a barra termina)
+const introTimer = setTimeout(dismissIntro, 3600);
+
+// Clique/toque para pular
+document.getElementById("intro").addEventListener("click", () => {
+  clearTimeout(introTimer);
+  dismissIntro();
+});
+
