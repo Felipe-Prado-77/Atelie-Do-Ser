@@ -1,73 +1,143 @@
 const profissionais = [
     {
-        nome: "Psic. Eliane Schlichting",
+        nome: "Eliane Schlichting",
         foto: "img/Eli.jpg",
-        descricao: "Psicoterapeuta, bacharel em Psicologia, com ênfase em abordagem sistêmica e terapias integrativas, Eliane possui mais de 17 anos de experiência em saúde mental e desenvolvimento humano. Também é fundadora e gestora do Ateliê do Ser. Sua abordagem cuidadosa e acolhedora auxilia os clientes a explorarem seu mundo interior e encontrarem caminhos para o equilíbrio emocional e relacional a partir da tríade corpo-mente-alma",
+        whatsapp: "5519982786628",
+        descricao: "Psicoterapeuta Sistêmica Integrativa, Fundadora e gestora do Ateliê do Ser, Jornada Profissional.",
         servicos: [
-            "Psicoterapia Sistêmica",
-            "Constelação Familiar",
-            "Mentoria de Desenvolvimento Pessoal e Profissional"
+            "Psicoterapeuta, atua com desenvolvimento humano, há mais de 20 anos, graduada em Psicologia e especialista em Saúde Mental, dedicada ao cuidado integral do ser humano.",
+            "Conduz processos terapêuticos fundamentados na abordagem Sistêmica, na Psicogenealogia e em práticas integrativas.",
+            "Utiliza recursos como Constelação Familiar, vivências simbólicas e técnicas terapêuticas que favorecem consciência, transformação e fortalecimento dos vínculos.",
+            "Acompanha pessoas em momentos de ansiedade, depressão, traumas, conflitos relacionais e desafios da vida, respeitando a singularidade de cada história.",
+            "Seu trabalho integra corpo, mente, emoções e alma, promovendo autoconhecimento, equilíbrio e novos caminhos para viver com mais autenticidade."
         ],
        
     },
 
     {
-        nome: "Psi. Ana Lúcia Simoes",
-        foto: "img/ana.jpg",
-        descricao: "Ana Lúcia é psicóloga clínica com 20 anos de experiência em Teoria Psicanalítica. Com uma abordagem acolhedora e sensível, ela oferece um espaço seguro para ajudar seus pacientes a compreenderem as conexões entre mente, corpo e comportamento, promovendo autoconhecimento, equilíbrio emocional e bem-estar.",
+        nome: "Edna M. Contato",
+        foto: "img/edna1.jpg",
+        whatsapp: "5519992761136",
+        descricao: "Terapeuta Energética, Jornada Profissional.",
         servicos: [
-            "Psicanálise Clínica"
+            "Atua desde 1993 com práticas integrativas voltadas ao equilíbrio energético e emocional.",
+            "Especialista em Florais de Bach, Reiki e Terapias Energéticas.",
+            "Desenvolve atendimentos que favorecem relaxamento, acolhimento e harmonização integral.",
+            "Auxilia pessoas que buscam mais equilíbrio emocional, vitalidade e conexão consigo mesmas."
             
         ],
         
     },
 
     {
-        nome: "Fisiot. Rosangela Silva",
-        foto: "img/rosa.jpg",
-        descricao: "Fisioterapeuta especializada em Microfisioterapia e Terapia Manual. Com uma abordagem focada em aliviar, tratar dores e promover o bem-estar físico, Rosângela utiliza técnicas eficazes para proporcionar relaxamento e recuperação de forma natural e integrada.",
+        nome: "Rosangela Silva",
+        foto: "img/rosangela.jpg",
+        whatsapp: "5519992114244",
+        descricao: "Fisioterapeuta, Microfisioterapeuta, Jornada Profissional.",
         servicos: [
-            "Microfisioterapia",
-            "Drenagem Linfática",
-            "Massagem Relaxante"
+            "Fisioterapeuta formada pela UNIMEP, especialista em Terapia Manual.",
+            "Atua como Microfisioterapeuta desde 2017 e também com Terapia Manual Estrutural (TME).",
+            "Trabalha considerando as relações entre corpo, emoções e memória biológica.",
+            "Busca aliviar dores, restaurar o equilíbrio do organismo e promover qualidade de vida."
         ],
         
     },
 
     {
-        nome: "Terap. Giselle Roseni",
-        foto: "img/gis.jpg",
-        descricao: "Especialista em Reflexoterapia Podal Físico e Emocional e técnicas da Medicina Chinesa, Giselle utiliza práticas como Moxabustão, Auriculoterapia, Ventosaterapia, Guasha e Acupuntura Estética Facial. Com uma abordagem acolhedora e sensível, ela promove o equilíbrio físico, mental e emocional, proporcionando um espaço seguro e focado na saúde holística de seus clientes.",
+        nome: "Giselle Roseni",
+        foto: "img/giselle.jpg",
+        whatsapp: "5519993209696",
+        descricao: "Reflexoterapeuta e Acupunturista, Jornada Profissional.",
         servicos: [
-            "Reflexoterapia",
-            "Acupuntura",
-            "Ventosaterapia",
-            "Auriculoterapia",
-            "Acupuntura Estética Facial"
+            "Formada em Pedagogia e Psicopedagogia, com mais de 22 anos dedicados ao desenvolvimento humano.",
+            "Especialista em Reflexoterapia Podal Física e Emocional e formada em Acupuntura pela Ebramec.",
+            "Utiliza recursos da Medicina Tradicional Chinesa, como Auriculoterapia, Moxabustão, Ventosaterapia, Guasha e Acupuntura Estética Facial.",
+            "Promove cuidado integrativo, favorecendo equilíbrio físico, emocional e energético."
+            
         ],
         
     },
 
     {
         nome: "Yoga. Rogélia Silva",
-        foto: "img/yoga.jpg",
-        descricao: "Instrutora de Yoga na tradição de Shri T. Krishnamacharya e T. K. V. Desikachar, Rogélia compartilha sua paixão pelo yoga como uma ferramenta para o equilíbrio e bem-estar. Seu compromisso em transmitir os ensinamentos do yoga com amor e consciência ajuda os clientes a encontrarem paz e serenidade em meio ao caos do mundo moderno.",
+        foto: "img/rogelia.jpg",
+        whatsapp: "5519993382340",
+        descricao: "Instrutora de Yoga, Jornada Profissional.",
         servicos: [
-            "Aulas de Yoga Tradicional",
-            "Práticas para Equilíbrio Físico e Mental",
-            "Técnicas de Relaxamento e Meditação"
+            "Atua com Hatha Yoga Vinyasa Krama.",
+            "Formação fundamentada na tradição de T. Krishnamacharya e TKV Desikachar.",
+            "Integra movimento, respiração e consciência corporal em uma prática respeitosa às necessidades individuais.",
+            "Oferece aulas individuais e em grupo, favorecendo equilíbrio físico, emocional e mental."
         ],
         
     },
 
     {
-        nome: "Terap. Edna M Contato",
-        foto: "img/edna.jpg",
-        descricao: "Especialista em terapia floral, terapia energética e reiki, Edna utiliza suas práticas para promover o equilíbrio emocional e o bem-estar holístico. Sua dedicação é evidente em cada sessão, onde oferece um espaço seguro e acolhedor para a jornada de cura de seus clientes.",
+        nome: "Ana Lúcia S. Braga",
+        foto: "img/ana psicanalista.jpg",
+        whatsapp: "5511972431067",
+        descricao: "Psicóloga Clínica, Jornada Profissional",
         servicos: [
-            "Florais de Bach",
-            "Terapia Energética",
-            "Reiki"
+            "Psicóloga clínica com mais de 20 anos de experiência e formação em Teoria Psicanalítica.",
+            "Oferece um espaço acolhedor para escuta, elaboração e compreensão da própria história.",
+            "Auxilia seus pacientes a compreenderem as relações entre mente, corpo e comportamento.",
+            "Favorece autoconhecimento, fortalecimento emocional e desenvolvimento pessoal."
+        ],
+        
+    },
+
+    {
+        nome: "Rafael Italliani",
+        foto: "img/rafael.jpg",
+        whatsapp: "5519992505250",
+        descricao: "Terapeuta Reiki, Jornada Profissional",
+        servicos: [
+            "Terapeuta Reiki com formação em Canalização Energética.",
+            "Desenvolve atendimentos voltados ao equilíbrio físico, emocional, mental e energético.",
+            "Auxilia na redução do estresse, melhora do sono, relaxamento profundo e fortalecimento da vitalidade.",
+            "Atendimentos presenciais e on-line, promovendo bem-estar e autoconhecimento."
+        ],
+        
+    },
+
+    {
+        nome: "Aline Sales",
+        foto: "img/aline.jpg",
+        whatsapp: "5519994310731",
+        descricao: "Nutricionista, Jornada Profissional",
+        servicos: [
+            "Nutricionista com atuação em nutrição clínica, esportiva e obesidade.",
+            "Desenvolve planos alimentares personalizados para emagrecimento, ganho de massa muscular e reeducação alimentar.",
+            "Incentiva uma alimentação equilibrada, prática e sustentável.",
+            "Atendimento humanizado, presencial e on-line."
+        ],
+        
+    },
+
+    {
+        nome: "Bruna Orizio",
+        foto: "img/bruna.jpg",
+        whatsapp: "5519991853239",
+        descricao: "Fisioterapeuta, Jornada Profissional",
+        servicos: [
+            "Atua na prevenção, reabilitação física e tratamento da dor.",
+            "Desenvolve tratamentos personalizados para dores musculares, articulares e lesões esportivas.",
+            "Auxilia na recuperação dos movimentos, funcionalidade e qualidade de vida.",
+            "Atendimento humanizado, promovendo autonomia, bem-estar e recuperação integral."
+        ],
+        
+    },
+
+    {
+        nome: "Rodrigo Duarte",
+        foto: "assets/rodrigo.jpeg",
+        whatsapp: "5511972431067",
+        descricao: "Gestão",
+        servicos: [
+            "Atua na organização interna, desenvolvimento de projetos e melhoria contínua dos processos.",
+            "Dá suporte à equipe, contribuindo para que o cuidado aos clientes aconteça com excelência.",
+            "Trabalha no fortalecimento da estrutura e no desenvolvimento sustentável do Ateliê do Ser."
+            
         ],
         
     }
@@ -77,11 +147,14 @@ const profissionais = [
 let indiceAtual = 0;
 
 function atualizarProfissional() {
+    
 
     const profissional = profissionais[indiceAtual];
+    
 
     document.getElementById("foto").src =
         profissional.foto;
+
 
     document.getElementById("nome").textContent =
         profissional.nome;
@@ -103,6 +176,10 @@ function atualizarProfissional() {
 
         lista.appendChild(item);
     });
+
+    document.getElementById("btnWhatsapp").href =
+    `https://wa.me/${profissional.whatsapp}?text=Olá,%20${encodeURIComponent(profissional.nome)}!%20Gostaria%20de%20agendar%20uma%20consulta.`;
+    
 
 }
 
@@ -207,4 +284,6 @@ document.getElementById("intro").addEventListener("click", () => {
   clearTimeout(introTimer);
   dismissIntro();
 });
+
+
 

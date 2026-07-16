@@ -1,135 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab:wght@100..900&display=swap');
-/* ===========================
-   INTRO ANIMATION — intro.css
-   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-#intro {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: #faf9f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@font-face {
+    font-family: "Wolf";
+    src: url("assets/Wolf\ in\ the\ City\ Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-/* Anéis expansivos */
-.petal-ring {
-  position: absolute;
-  width: 420px; height: 420px;
-  border-radius: 50%;
-  border: 1px solid rgba(247,132,41,0.2);
-  opacity: 0;
-  animation: expandRing 2.2s cubic-bezier(0.22,1,0.36,1) forwards;
-}
-.petal-ring:nth-child(2) {
-  width: 540px; height: 540px;
-  border-color: rgba(247,153,78,0.12);
-  animation-delay: 0.18s;
-}
-.petal-ring:nth-child(3) {
-  width: 660px; height: 660px;
-  border-color: rgba(247,132,41,0.06);
-  animation-delay: 0.36s;
-}
-
-@keyframes expandRing {
-  0%   { opacity: 0; transform: scale(0.4); }
-  60%  { opacity: 1; }
-  100% { opacity: 0.7; transform: scale(1); }
-}
-
-/* Logo */
-.logo-wrap {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: 0;
-  animation: logoReveal 1.6s cubic-bezier(0.22,1,0.36,1) 0.4s forwards;
-}
-
-@keyframes logoReveal {
-  0%   { opacity: 0; transform: scale(0.82) translateY(12px); filter: blur(6px); }
-  100% { opacity: 1; transform: scale(1)    translateY(0);    filter: blur(0); }
-}
-
-.logo-wrap img {
-  width: 280px;
-  filter: grayscale(1) brightness(0);
-  animation: colorShift 2.4s ease 1.0s forwards, breathe 5s ease-in-out 2.5s infinite;
-}
-
-@keyframes colorShift {
-  0%   { filter: grayscale(1) brightness(0); }
-  30%  { filter: grayscale(0) brightness(0.7) sepia(1) saturate(4) hue-rotate(-10deg); }
-  100% { filter: grayscale(0) brightness(1)   sepia(1) saturate(5) hue-rotate(-15deg); }
-}
-
-@keyframes breathe {
-  0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.025); }
-}
-
-/* Tagline */
-.tagline {
-  margin-top: 10px;
-  font-size: 12px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #F78429;
-  opacity: 0;
-  animation: tagFade 1s ease 2.2s forwards;
-}
-
-@keyframes tagFade {
-  from { opacity: 0; transform: translateY(6px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Barra de progresso */
-.bar-track {
-  position: absolute;
-  bottom: 52px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 1px;
-  background: rgba(247,132,41,0.15);
-}
-.bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #F78429, #F7994E);
-  width: 0%;
-  animation: fillBar 3.0s cubic-bezier(0.4,0,0.2,1) 0.3s forwards;
-}
-
-@keyframes fillBar {
-  0%   { width: 0%; }
-  100% { width: 100%; }
-}
-
-/* Saída */
-#intro.exit {
-  animation: introExit 0.9s cubic-bezier(0.4,0,1,1) forwards;
-  pointer-events: none;
-}
-
-@keyframes introExit {
-  0%   { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(1.04); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  #intro, .logo-wrap, .petal-ring, .bar-fill, .tagline {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-  #intro.exit { display: none; }
-}
 
 * {
     margin: 0;
@@ -149,7 +28,11 @@ img {
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #F7994E;
+    background-image: url("assets/AtSFundoSite_1300x500.png"); /* Caminho da imagem */
+    background-size: cover;        /* Preenche toda a tela */
+    background-position: center;   /* Centraliza */
+    background-repeat: no-repeat;  /* Não repete */
+    background-attachment: fixed;  /* Opcional: efeito fixo */
 }
 
 /* ─── ANIMAÇÕES ─── */
@@ -223,8 +106,15 @@ header nav a:hover {
 }
 
 /* ─── TÍTULOS ─── */
+.h1{
+font-family: 'Wolf' !important;
+
+
+}
+
 .h2 {
     text-align: center;
+    font-family: Wolf !important;
 }
 
 .h4 {
@@ -241,6 +131,7 @@ header nav a:hover {
 }
 
 .card {
+    
     background: white;
     border-radius: 20px;
     padding: clamp(20px, 4vw, 30px);
@@ -265,6 +156,8 @@ header nav a:hover {
 }
 
 .info h2 {
+    font-family: Wolf;
+    font-size: 80px;
     margin-top: 0;
     color: #333;
 }
@@ -334,7 +227,8 @@ button:hover {
 }
 
 .texto h2 {
-    font-size: clamp(20px, 3vw, 28px);
+    font-family: wolf;
+    font-size: clamp(60px, 3vw, 60px);
     margin-bottom: 10px;
 }
 
@@ -762,4 +656,38 @@ button:hover {
 .social-links img{
     width:24px;
     height:24px;
+}
+
+
+.btn-whatsapp{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+
+    background:linear-gradient(135deg,#25D366,#1EBE5D);
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+
+    border-radius:12px;
+    transition:all .3s ease;
+    box-shadow:0 6px 15px rgba(37,211,102,.25);
+}
+
+.btn-whatsapp:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(37,211,102,.35);
+}
+
+.lgbx {
+    width: 200px;
+    padding: 1%;
+    display: block;
+    margin: 0 auto;
 }
